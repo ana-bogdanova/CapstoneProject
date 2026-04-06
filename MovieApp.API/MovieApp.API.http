@@ -1,0 +1,19 @@
+@MovieApp.API_HostAddress = http://localhost:5016
+
+### Search for a movie
+GET {{MovieApp.API_HostAddress}}/movies/search?title=Inception
+Accept: application/json
+
+### Get all saved movies
+GET {{MovieApp.API_HostAddress}}/movies
+Accept: application/json
+
+### Save a movie
+POST {{MovieApp.API_HostAddress}}/movies
+Content-Type: application/json
+
+{
+  "title": "Inception",
+  "year": "2010",
+  "imdbId": "tt1375666"
+}

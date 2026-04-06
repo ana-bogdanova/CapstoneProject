@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "C9/l/V3/ADY=",
+  "success": true,
+  "projectFilePath": "/Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.API/MovieApp.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/anabogdanova/.nuget/packages/microsoft.aspnetcore.openapi/10.0.3/microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "/Users/anabogdanova/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
