@@ -39,7 +39,11 @@ dotnet run --project MovieApp.Console
 * How to communicate with external API
 * How to write unit tests
 
+
 ## If you had more time, what would you have done differently or added?
 
 I would use more endpoints to create a more extended model for better app functionality.
 I would save favorites to a file or database.
+
+# Use of AI
+AI used for console error explanation, for providing suggestions on what should be included in the ExternalApiService file (though my mentor Aaron noted that it was not complete), and for finding the cause of why my tests were not running.
