@@ -13,7 +13,7 @@ MovieApp is a simple console application that allows users to:
 ## Prerequisites
 - .NET SDK 7.0 or later installed on your machine  
 
-## How to Build and Run
+## On Your Machine
 
 1. Clone or download the repository 
 2. Open the project in a terminal or VS Code
