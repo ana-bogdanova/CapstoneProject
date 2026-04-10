@@ -1,52 +1,27 @@
 using Microsoft.AspNetCore.Mvc;
-using MovieApp.Api.Models;
+using MovieApp.Api.Services;
 
 namespace MovieApp.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class FavoritesController : ControllerBase
+public class MoviesController : ControllerBase
 {
-    // In-memory storage
-    private static List<Movie> favoriteMovies = new();
-    private static int nextId = 1;
-
-    // CREATE
-    [HttpPost]
-    public ActionResult<Movie> AddFavorite(Movie movie)
+    public ExternalApiService externalApiService { get; set; }
+    public MoviesController(ExternalApiService externalApiService)
     {
-        movie.Id = nextId++;
-        favoriteMovies.Add(movie);
-
-        return Created($"/api/favorites/{movie.Id}", movie);
+        this.externalApiService = externalApiService;
     }
-
-    // READ
-    [HttpGet]
-    public ActionResult<List<Movie>> GetFavorites()
+    
+    //SEARCH
+    [HttpGet("search")]
+    public async Task<IActionResult> SearchMovies(string title)
     {
-        return Ok(favoriteMovies);
-    }
+        var results = await externalApiService.SearchMovieAsync(title);
 
-    // UPDATE
-    [HttpPut("{id}/comment")]
-    public ActionResult<Movie> UpdateComment(int id, string comment)
-    {
-        var movie = favoriteMovies.FirstOrDefault(m => m.Id == id);
-
-        if (movie == null)
+        if (results == null)
             return NotFound();
 
-        movie.Comment = comment;
-
-        return Ok(movie);
-    }
-
-    // DELETE
-    [HttpDelete]
-    public ActionResult DeleteAll()
-    {
-        favoriteMovies.Clear();
-        return Ok();
+        return Ok(results);
     }
 }

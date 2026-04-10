@@ -3,7 +3,7 @@ using System.Text.Json;
 using MovieApp.Console.Models;
 
 var httpClient = new HttpClient();
-httpClient.BaseAddress = new Uri("http://localhost:5016/");
+httpClient.BaseAddress = new Uri("http://localhost:5050/");
 
 while (true)
 {

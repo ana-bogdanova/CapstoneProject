@@ -7,6 +7,7 @@
 /Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/MovieApp.ConsoleApp.AssemblyInfoInputs.cache
 /Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/MovieApp.ConsoleApp.AssemblyInfo.cs
 /Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/MovieApp.ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/MovieApp.ConsoleApp.sourcelink.json
 /Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/MovieApp.ConsoleApp.dll
 /Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/refint/MovieApp.ConsoleApp.dll
 /Users/anabogdanova/Desktop/CodeYou/MovieApp/MovieApp.ConsoleApp/obj/Debug/net10.0/MovieApp.ConsoleApp.pdb

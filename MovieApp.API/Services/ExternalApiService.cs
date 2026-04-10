@@ -8,6 +8,11 @@ public class ExternalApiService
 {
     private string apiKey = "dee47dcd";
 
+    public ExternalApiService()
+    {
+
+    }
+
     public async Task<Movie?> SearchMovieAsync(string title)
     {
         HttpClient client = new HttpClient();
